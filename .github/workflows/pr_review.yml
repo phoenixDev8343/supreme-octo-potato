@@ -21,7 +21,7 @@ jobs:
       - name: Run Vorpal with reviewdog
         uses: checkmarx/vorpal-reviewdog-github-action@v1.2.0
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+          github_token: ${{ secrets.GITHUBTOKEN }}
           # If using changed files:
           source_path: ${{ steps.changed-files.outputs.all_changed_files }}
           # If scanning whole project: e.g. "src/,tests/"
